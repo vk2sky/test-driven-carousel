@@ -4,8 +4,6 @@ module.exports = {
     "plugin:react/recommended"
   ],
 
-  parser: "babel-eslint",
-
   parserOptions: {
     ecmaVersion: 6,
     sourceType: "module",
