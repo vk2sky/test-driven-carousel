@@ -29,7 +29,7 @@ describe("Carousel", () => {
     let wrapper;
 
     beforeEach(() => {
-      wrapper = shallow(<Carousel slides={slides} />);
+      wrapper = mount(<Carousel slides={slides} />);
     });
 
     it("sets slideIndex={0} on the core component", () => {
