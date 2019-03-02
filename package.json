@@ -6,7 +6,7 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack",
-    "format": "prettier-eslint",
+    "format": "prettier-eslint --list-different **/*.js",
     "lint": "eslint . && stylelint **/*.js",
     "start": "webpack-dev-server --open",
     "test": "jest"
@@ -51,7 +51,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run lint"
+      "pre-commit": "npm run lint && npm run format"
     }
   }
 }
